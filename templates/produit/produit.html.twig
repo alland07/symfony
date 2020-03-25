@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fiche Produit{% endblock %}
+
+{% block body %}
+
+<h1>La fiche du produit</h1>
+    <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{asset('uploads/' ~ produits.photo)}}" alt="Card image cap" >
+    <div class="card-body">
+    <h5 class="card-title">{{produits.nom}}</h5>
+    <p class="card-text">{{'produit.price'|trans}} {{produits.prix}}€ {{'produit.there_is'|trans}} {{produits.quantite}}.</p>
+    <a href="{{ path('delete_produit', {'id':produits.id}) }}" class="btn btn-danger">{{'produit.del'|trans}}</a>
+  </div>
+  </div>
+
+  <h2>{{'produit.add'|trans}}</h2>
+    {{ form(ajout_produit) }}
+{% endblock %}

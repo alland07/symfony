@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page produit{% endblock %}
+
+{% block body %}
+
+<h1>{{'produit.titre'|trans}}</h1>
+{% if produits is not empty %}
+{% for un_produit in produits %}
+    <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{asset('uploads/' ~ un_produit.photo)}}" alt="Card image cap" >
+    <div class="card-body">
+    <h5 class="card-title">{{un_produit.nom}}</h5>
+    <p class="card-text">{{'produit.price'|trans}} {{un_produit.prix}}€ {{'produit.there_is'|trans}} {{un_produit.quantite}}.</p>
+    <a href="{{ path('fiche', {'id':un_produit.id}) }}" class="btn btn-primary">{{'produit.produit'|trans}}</a>
+    <a href="{{ path('delete_produit', {'id':un_produit.id}) }}" class="btn btn-danger">{{'produit.del'|trans}}</a>
+  </div>
+</div>
+{% endfor %}
+{% else %}
+<p>{{'produit.aucun'|trans}}</p>
+{% endif %}
+
+<h2>{{'produit.new'|trans}}</h2>
+    {{ form(new_produit) }}
+
+{% endblock %}
