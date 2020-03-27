@@ -1,0 +1,27 @@
+# /translations/messages.fr.yml
+
+panier:
+    titre: 'Page Panier'
+    nom: 'nom'
+    quantite: 'Quantite'
+    prix: 'Montant'
+    aucun: 'Il ny a pas de produits dans panier'
+    supp: 'Supprimer le produit'
+    there_is: 'Il y a'
+    product: 'produit(s).'
+    total: 'total:'
+
+produit: 
+    titre: 'Page produit'
+    price: 'Le prix est de '
+    there_is: 'il y en a'
+    produit: 'Fiche Produit '
+    del: 'Supprimer'
+    aucun: 'Il ny a aucun produit'
+    # Il y a une apostrophe entre n et y mais cela cause une erreur de la mettre et \' ne fonctionne pas non plus
+    new: 'Nouveau Produit'
+    add: 'Ajouter au panier'
+    success: 'Le produit a été ajouté'
+    error: 'Le fichier na pas été upload'
+    notexist: 'Le produit n existe pas'
+    introuvable: 'Le produit est introuvable'

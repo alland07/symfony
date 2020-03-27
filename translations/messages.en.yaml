@@ -1,0 +1,27 @@
+# /translations/messages.en.yml
+
+panier:
+    titre: 'This is the basket page'
+    nom: 'Name'
+    quantite: 'Quantity'
+    prix: 'Amount'
+    aucun: 'There is no product in the basket'
+    supp: 'Delete'
+    there_is: 'There is'
+    product: 'product(s).'
+    total: 'total:'
+    success: 'Le produit a été supprimé du panier'
+
+produit: 
+    titre: 'Product Page'
+    price: 'The price is '
+    there_is: 'there is '
+    produit: 'Fiche Produit '
+    del: 'Delete '
+    aucun: 'There is no products'
+    new: 'New product'
+    add: 'Add to cart'
+    success: 'The product has been added'
+    error: 'The file has not been uploaded'
+    notexist: 'The product does not exist'
+    introuvable: 'The product cannot be found'
